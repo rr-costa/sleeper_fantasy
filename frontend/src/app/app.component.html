@@ -1,0 +1,18 @@
+<div class="login-container">
+  <h1>Login Sleeper</h1>
+  <input
+    type="text"
+    placeholder="Enter your Sleeper username"
+    [(ngModel)]="username"
+    [disabled]="isLoggedIn"
+    #inputUser
+  />
+  <button (click)="signIn()" [disabled]="isLoggedIn">Sign In</button>
+  <button (click)="signOut()" [disabled]="!isLoggedIn">Sign Out</button>
+
+  <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+
+  <div *ngIf="isLoggedIn" class="welcome">
+    Welcome, {{ username }}!
+  </div>
+</div>

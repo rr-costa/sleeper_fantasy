@@ -1,0 +1,23 @@
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+  padding: 2rem;
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 8px 16px;
+}
+
+.tabs button {
+  margin-top: 2rem;
+  display: block;
+  width: 100%;
+}

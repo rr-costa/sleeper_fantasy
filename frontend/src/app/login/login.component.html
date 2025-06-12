@@ -1,0 +1,11 @@
+<div class="login-container">
+  <h2>Sleeper Fantasy Login</h2>
+  <input [(ngModel)]="username" placeholder="Enter your Sleeper username" [disabled]="isLoggedIn" />
+  <button (click)="signIn()" [disabled]="isLoggedIn">Sign In</button>
+  <button (click)="confirmSignOut()" *ngIf="isLoggedIn">Sign Out</button>
+
+  <div class="tabs" *ngIf="isLoggedIn">
+    <button>Status Player</button>
+    <button>Find Player</button>
+  </div>
+</div>
